@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <h1>My Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#skills">Skills</a></li>
@@ -19,58 +20,69 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="dark-mode-toggle">🌙</button>
     </header>
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Web Development (HTML, CSS, JavaScript, React)</li>
-            <li>Backend Development (Node.js, Express, MongoDB)</li>
-            <li>Version Control (Git, GitHub)</li>
-            <li>UI/UX Design (Figma, Adobe XD)</li>
-        </ul>
+        <div class="card">
+            <ul>
+                <li>HTML, CSS, JavaScript, React</li>
+                <li>Node.js, Express, MongoDB</li>
+                <li>Git, GitHub, Agile Development</li>
+                <li>UI/UX Design, Figma, Adobe XD</li>
+            </ul>
+        </div>
     </section>
 
     <section id="experience">
         <h2>Experience</h2>
-        <p><strong>Software Developer - XYZ Company</strong> (2022-Present)</p>
-        <ul>
-            <li>Developed and maintained responsive web applications.</li>
-            <li>Implemented REST APIs for seamless data exchange.</li>
-            <li>Optimized website performance by 30%.</li>
-        </ul>
-
-        <p><strong>Intern - ABC Startup</strong> (2021-2022)</p>
-        <ul>
-            <li>Assisted in front-end development using React.js.</li>
-            <li>Worked on database management with MongoDB.</li>
-        </ul>
+        <div class="card">
+            <p><strong>Software Developer - XYZ Company</strong> (2022-Present)</p>
+            <ul>
+                <li>Developed dynamic websites and web applications.</li>
+                <li>Integrated APIs and optimized website performance.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <p><strong>Intern - ABC Startup</strong> (2021-2022)</p>
+            <ul>
+                <li>Worked on React-based projects.</li>
+                <li>Managed cloud database solutions.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>Full Stack Web Development - Coursera</li>
-            <li>JavaScript Algorithms & Data Structures - freeCodeCamp</li>
-            <li>Cloud Computing with AWS - Udemy</li>
-        </ul>
+        <div class="card">
+            <ul>
+                <li>Full Stack Web Development - Coursera</li>
+                <li>JavaScript Algorithms & Data Structures - freeCodeCamp</li>
+                <li>Cloud Computing with AWS - Udemy</li>
+            </ul>
+        </div>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <p><strong>Bachelor's Degree in Computer Science</strong></p>
-        <p>University of XYZ, 2018-2022</p>
+        <div class="card">
+            <p><strong>Bachelor's Degree in Computer Science</strong></p>
+            <p>University of XYZ, 2018-2022</p>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A personal portfolio showcasing my skills and projects.</p>
-        </div>
-        <div class="project">
-            <h3>Task Manager App</h3>
-            <p>A web-based task manager built with React and Firebase.</p>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>A stylish portfolio website with dark mode.</p>
+            </div>
+            <div class="project-card">
+                <h3>Task Manager App</h3>
+                <p>A React + Firebase-based task manager.</p>
+            </div>
         </div>
     </section>
 
@@ -88,7 +100,7 @@
     </section>
 
     <footer>
-        <p>© 2025 My Portfolio</p>
+        <p>© 2025 My Portfolio | Built with ❤️</p>
     </footer>
 </body>
 </html>
