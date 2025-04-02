@@ -6,145 +6,60 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
-    <style>
-        :root {
-            --primary-color: #264653;
-            --secondary-color: #E76F51;
-            --accent-color: #2A9D8F;
-            --background-color: #F8F9FA;
-            --text-color: #333;
-            --card-bg: #FFFFFF;
-            --shadow-color: rgba(0, 0, 0, 0.1);
-        }
-
-        [data-theme="dark"] {
-            --primary-color: #1E3A5F;
-            --secondary-color: #F4A261;
-            --accent-color: #90CAF9;
-            --background-color: #1C1F26;
-            --text-color: #F8F9FA;
-            --card-bg: #273443;
-            --shadow-color: rgba(255, 255, 255, 0.1);
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            transition: background 0.3s, color 0.3s;
-        }
-
-        header {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 20px;
-            background: var(--primary-color);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        #theme-toggle {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-            margin-left: 20px;
-        }
-
-        .section {
-            padding: 50px;
-            text-align: center;
-        }
-
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            width: 80%;
-            margin: auto;
-            position: relative;
-        }
-
-        .carousel-container {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .project-card {
-            min-width: 100%;
-            padding: 20px;
-            background: var(--card-bg);
-            box-shadow: 0 4px 6px var(--shadow-color);
-            text-align: center;
-            border-radius: 8px;
-        }
-    </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const themeToggle = document.getElementById("theme-toggle");
-            themeToggle.addEventListener("click", function() {
-                document.body.dataset.theme = document.body.dataset.theme === "dark" ? "" : "dark";
-            });
-
-            let index = 0;
-            const carousel = document.querySelector(".carousel-container");
-            setInterval(() => {
-                index = (index + 1) % carousel.children.length;
-                carousel.style.transform = `translateX(-${index * 100}%)`;
-            }, 3000);
-        });
-    </script>
 </head>
 <body>
+
     <header>
+        <button id="theme-toggle">🌙</button>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#bio">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle">🌙</button>
     </header>
-    
-    <section id="about" class="section">
+
+    <section id="bio">
         <h1>John Doe</h1>
-        <p>A passionate web developer creating beautiful and functional websites.</p>
+        <p>A passionate web developer specializing in modern front-end technologies.</p>
     </section>
-    
-    <section id="experience" class="section">
+
+    <section id="experience">
         <h2>Experience</h2>
         <ul>
-            <li>Software Developer at XYZ (2022-Present)</li>
-            <li>Intern at ABC Tech (2021-2022)</li>
+            <li>Software Developer at XYZ Corp (2022-Present)</li>
+            <li>Intern at ABC Startup (2021-2022)</li>
         </ul>
     </section>
-    
-    <section id="projects" class="section">
+
+    <section id="projects">
         <h2>Projects</h2>
         <div class="carousel">
-            <div class="carousel-container">
-                <div class="project-card">Project 1</div>
-                <div class="project-card">Project 2</div>
-                <div class="project-card">Project 3</div>
+            <div class="carousel-track">
+                <div class="project-slide">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern portfolio with light/dark mode.</p>
+                </div>
+                <div class="project-slide">
+                    <h3>Task Manager</h3>
+                    <p>A task management app built with React.</p>
+                </div>
             </div>
+            <button class="prev">‹</button>
+            <button class="next">›</button>
         </div>
     </section>
-    
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:john@example.com">john@example.com</a></p>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+        <div class="social-links">
+            <a href="https://github.com/johndoe" target="_blank"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/johndoe/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
     </section>
+
 </body>
 </html>
