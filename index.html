@@ -6,101 +6,145 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <style>
+        :root {
+            --primary-color: #264653;
+            --secondary-color: #E76F51;
+            --accent-color: #2A9D8F;
+            --background-color: #F8F9FA;
+            --text-color: #333;
+            --card-bg: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #1E3A5F;
+            --secondary-color: #F4A261;
+            --accent-color: #90CAF9;
+            --background-color: #1C1F26;
+            --text-color: #F8F9FA;
+            --card-bg: #273443;
+            --shadow-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+            background: var(--primary-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #theme-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .project-card {
+            min-width: 100%;
+            padding: 20px;
+            background: var(--card-bg);
+            box-shadow: 0 4px 6px var(--shadow-color);
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeToggle = document.getElementById("theme-toggle");
+            themeToggle.addEventListener("click", function() {
+                document.body.dataset.theme = document.body.dataset.theme === "dark" ? "" : "dark";
+            });
+
+            let index = 0;
+            const carousel = document.querySelector(".carousel-container");
+            setInterval(() => {
+                index = (index + 1) % carousel.children.length;
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+            }, 3000);
+        });
+    </script>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="dark-mode-toggle">🌙</button>
+        <button id="theme-toggle">🌙</button>
     </header>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="card">
-            <ul>
-                <li>HTML, CSS, JavaScript, React</li>
-                <li>Node.js, Express, MongoDB</li>
-                <li>Git, GitHub, Agile Development</li>
-                <li>UI/UX Design, Figma, Adobe XD</li>
-            </ul>
-        </div>
+    
+    <section id="about" class="section">
+        <h1>John Doe</h1>
+        <p>A passionate web developer creating beautiful and functional websites.</p>
     </section>
-
-    <section id="experience">
+    
+    <section id="experience" class="section">
         <h2>Experience</h2>
-        <div class="card">
-            <p><strong>Software Developer - XYZ Company</strong> (2022-Present)</p>
-            <ul>
-                <li>Developed dynamic websites and web applications.</li>
-                <li>Integrated APIs and optimized website performance.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <p><strong>Intern - ABC Startup</strong> (2021-2022)</p>
-            <ul>
-                <li>Worked on React-based projects.</li>
-                <li>Managed cloud database solutions.</li>
-            </ul>
-        </div>
+        <ul>
+            <li>Software Developer at XYZ (2022-Present)</li>
+            <li>Intern at ABC Tech (2021-2022)</li>
+        </ul>
     </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="card">
-            <ul>
-                <li>Full Stack Web Development - Coursera</li>
-                <li>JavaScript Algorithms & Data Structures - freeCodeCamp</li>
-                <li>Cloud Computing with AWS - Udemy</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="card">
-            <p><strong>Bachelor's Degree in Computer Science</strong></p>
-            <p>University of XYZ, 2018-2022</p>
-        </div>
-    </section>
-
-    <section id="projects">
+    
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>A stylish portfolio website with dark mode.</p>
-            </div>
-            <div class="project-card">
-                <h3>Task Manager App</h3>
-                <p>A React + Firebase-based task manager.</p>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="project-card">Project 1</div>
+                <div class="project-card">Project 2</div>
+                <div class="project-card">Project 3</div>
             </div>
         </div>
     </section>
-
-    <section id="contact">
+    
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <div class="social-links">
-            <a href="https://github.com/yourgithub" target="_blank">
-                <img src="github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn">
-            </a>
-        </div>
+        <p>Email: <a href="mailto:john@example.com">john@example.com</a></p>
     </section>
-
-    <footer>
-        <p>© 2025 My Portfolio | Built with ❤️</p>
-    </footer>
 </body>
 </html>
