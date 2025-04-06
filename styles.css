@@ -116,7 +116,7 @@ body.dark-theme {
 /* Mode Toggle Button */
 .mode-toggle {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 20px;
     background-color: var(--primary-color);
     padding: 10px;
