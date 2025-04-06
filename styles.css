@@ -59,7 +59,7 @@ p {
     font-weight: bold;
 }
 
-/* Carousel Animation */
+/* Carousel Animation 
 @keyframes carousel {
     0% {
         transform: translateX(0);
@@ -85,7 +85,7 @@ p {
     100% {
         transform: translateX(-700%);
     }
-}
+}*/
 
 /* Section Styles */
 section {
