@@ -50,10 +50,6 @@ p {
     cursor: pointer;
 }
 
-menu-item:hover {
-    text-decoration: underline;
-}
-
 /* Section Styles */
 section {
     padding: 40px;
