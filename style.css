@@ -1,0 +1,116 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Right-Aligned Headings */
+.right-align {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    margin: 20px 0;
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+/* Dark and Light Theme Variables */
+:root {
+    --primary-color: #264653;
+    --secondary-color: #E76F51;
+    --accent-color: #2A9D8F;
+    --background-color: #F8F9FA;
+    --text-color: #333;
+}
+
+body.dark-theme {
+    --primary-color: #1E3A5F;
+    --secondary-color: #F4A261;
+    --accent-color: #90CAF9;
+    --background-color: #1C1F26;
+    --text-color: #F8F9FA;
+}
+
+/* Mode Toggle Button */
+.mode-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+}
