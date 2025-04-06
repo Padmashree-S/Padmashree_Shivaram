@@ -52,7 +52,7 @@ p {
 
 .carousel-item {
     flex: 0 0 100%;
-    text-align: center;
+    text-align: right;
     font-size: 2rem;
     padding: 15px;
     color: #fff;
