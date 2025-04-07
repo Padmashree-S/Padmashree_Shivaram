@@ -128,15 +128,15 @@ body.dark-theme header h1, body.dark-mode header p {
 /* Menu Container (Aligned to the Right) */
 .menu-container {
     display: flex;
-    justify-content: flex-end;/* aligns all items to the right */
-    gap: 10px;
+    justify-content: space-between; /* Space between toggle and menu group */
+    align-items: center;
     background-color: var(--primary-color);
-    padding: 30px 20px;
-    position: sticky;  /* Make the menu sticky */
-    top: 0;            /* Stick the menu at the top of the viewport */
-    z-index: 1000;     /* Ensures the menu is always on top of other content */
-    width: 100%;       /* Ensure the menu spans the full width of the page */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to make the menu stand out */
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .mode-toggle {
     display: flex;
@@ -149,6 +149,12 @@ button {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Control spacing between menu items */
 }
 
 .menu-item {
