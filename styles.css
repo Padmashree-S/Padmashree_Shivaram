@@ -132,11 +132,6 @@ body.dark-theme header h1, body.dark-mode header p {
     gap: 30px;
     background-color: var(--primary-color);
     padding: 30px 20px;
-    position: sticky;  /* Make the menu sticky */
-    top: 0;            /* Stick the menu at the top of the viewport */
-    z-index: 1000;     /* Ensures the menu is always on top of other content */
-    width: 100%;       /* Ensure the menu spans the full width of the page */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to make the menu stand out */
 }
 
 .menu-item {
