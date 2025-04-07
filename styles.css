@@ -128,7 +128,7 @@ body.dark-theme header h1, body.dark-mode header p {
 /* Menu Container (Aligned to the Right) */
 .menu-container {
     display: flex;
-    justify-content: space-between;/* push toggle left, menu right */
+    justify-content: flex;/* push toggle left, menu right */
     gap: 15px;
     background-color: var(--primary-color);
     padding: 30px 20px;
