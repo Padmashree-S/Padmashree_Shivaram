@@ -129,7 +129,7 @@ body.dark-theme header h1, body.dark-mode header p {
 .menu-container {
     display: flex;
     justify-content: space-between;/* push toggle left, menu right */
-    gap: 30px;
+    gap: 15px;
     background-color: var(--primary-color);
     padding: 30px 20px;
     position: sticky;  /* Make the menu sticky */
