@@ -154,7 +154,7 @@ button {
 .menu-items {
     display: flex;
     align-items: center;
-    gap: 20px; /* Control spacing between menu items */
+    gap: 5px; /* Control spacing between menu items */
 }
 
 .menu-item {
