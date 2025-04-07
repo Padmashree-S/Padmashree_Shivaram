@@ -67,21 +67,21 @@ main, header, footer {
     border-radius: 8px;
 }
 
-/* Dark mode styling */
-body.dark-mode .about-me-container {
+/* Dark theme styling */
+body.dark-theme .about-me-container {
     background-color: #333;  /* Dark background for dark mode */
 }
 
-body.dark-mode .about-me-text {
+body.dark-theme .about-me-text {
     color: #fff;  /* Light text for dark mode */
 }
 
 /* Optional: Ensure the header and other sections follow the same theme */
-body.dark-mode header {
+body.dark-theme header {
     color: #fff;  /* Light text for header in dark mode */
 }
 
-body.dark-mode header h1, body.dark-mode header p {
+body.dark-theme header h1, body.dark-mode header p {
     color: #fff;  /* Ensuring header text is visible in dark mode */
 }
 
