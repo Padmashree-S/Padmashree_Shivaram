@@ -57,7 +57,7 @@ main, header, footer {
     flex: 1;
     padding-right: 20px;
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #333; /* Dark text for light mode */
 }
 
@@ -102,7 +102,7 @@ body.dark-theme header h1, body.dark-mode header p {
 
 .experience-item p,
 .certification-item p {
-    font-size: 1rem;
+    font-size: 1.1em;
     color: var(--text-color);
     line-height: 1.5; /* Added more line spacing to prevent congested points */
     margin-bottom: 10px; /* Added margin to separate points */
@@ -224,7 +224,7 @@ section {
 }
 
 .education-item p {
-    font-size: 1rem;
+    font-size: 1.1em;
     color: var(--text-color);
     line-height: 1.5; /* Increased line-height for better readability */
 }
