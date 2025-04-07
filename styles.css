@@ -128,8 +128,8 @@ body.dark-theme header h1, body.dark-mode header p {
 /* Menu Container (Aligned to the Right) */
 .menu-container {
     display: flex;
-    justify-content: flex;/* push toggle left, menu right */
-    gap: 15px;
+    justify-content: flex-end;/* aligns all items to the right */
+    gap: 10px;
     background-color: var(--primary-color);
     padding: 30px 20px;
     position: sticky;  /* Make the menu sticky */
