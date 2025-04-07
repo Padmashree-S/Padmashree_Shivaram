@@ -12,6 +12,15 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* General Wrapper for Page Content to Add Padding on Sides */
+.page-wrapper {
+    max-width: 1200px;  /* Set max width for large screens */
+    margin: 0 auto;  /* Center the content horizontally */
+    padding-left: 80px;  /* Increase padding on the left */
+    padding-right: 80px;  /* Increase padding on the right */
+}
+
+/* Header Styles */
 header {
     text-align: center;
     padding: 50px 0;
@@ -41,33 +50,6 @@ main, header, footer {
     padding-right: 40px;
 }
 
-/* Styling for the About Me Section Container */
-.about-me-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px 0;
-    padding: 40px;
-    background-color: #f4f4f9;
-    border-radius: 8px;
-}
-
-/* Styling for the text part of About Me */
-.about-me-text {
-    flex: 1; /* Take up all available space */
-    padding-right: 20px; /* Adds space between the text and the image */
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Styling for the image part of About Me */
-.about-me-image img {
-    max-width: 250px; /* Reducing image size */
-    height: auto;
-    border-radius: 8px;
-}
-
 /* Experience & Certifications Section - Clean Layout */
 .experience-item,
 .certification-item {
@@ -90,23 +72,6 @@ main, header, footer {
     line-height: 1.5; /* Added more line spacing to prevent congested points */
     margin-bottom: 10px; /* Added margin to separate points */
 }
-
-/* Remove dividing lines between companies */
-.experience-item {
-    border-bottom: none;
-}
-.experience-item p:last-child {
-    margin-bottom: 0;
-}
-
-/* Remove previous boxy background styles if any */
-.experience-item,
-.certification-item {
-    background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-}
-
 
 /* Menu Container (Aligned to the Right) */
 .menu-container {
