@@ -50,6 +50,23 @@ main, header, footer {
     padding-right: 40px;
 }
 
+/* Styling for About Me Section */
+.about-me {
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #f4f4f9; /* Light background color */
+    border-radius: 8px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* Optionally, you can add some margin to the header to space out the GIF and About Me section */
+header {
+    margin-bottom: 40px;
+}
+
 /* Experience & Certifications Section - Clean Layout */
 .experience-item,
 .certification-item {
