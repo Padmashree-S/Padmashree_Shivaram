@@ -41,26 +41,35 @@ main, header, footer {
     padding-right: 40px;
 }
 
-/* Experience Section */
-#experience {
-    margin-top: 40px;
-}
-
-.experience-item {
+/* Experience & Certifications Section - Clean Layout */
+.experience-item,
+.certification-item {
     margin-bottom: 30px;
-    padding: 15px;
-    background-color: var(--accent-color);
-    border-radius: 10px;
-    color: #fff;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--accent-color);
 }
 
-.experience-item h3 {
+.experience-item h3,
+.certification-item h3 {
+    font-size: 1.2rem;
     margin-bottom: 5px;
+    color: var(--text-color);
 }
 
-.experience-item p {
-    margin-bottom: 5px;
+.experience-item p,
+.certification-item p {
+    font-size: 1rem;
+    color: var(--text-color);
 }
+
+/* Remove previous boxy background styles if any */
+.experience-item,
+.certification-item {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
 
 /* Menu Container (Aligned to the Right) */
 .menu-container {
@@ -128,6 +137,24 @@ section {
 .project img {
     width: 100%;
     border-radius: 8px;
+}
+
+/* Education Section */
+.education-item {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.education-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: var(--text-color);
 }
 
 /* Social Links */
