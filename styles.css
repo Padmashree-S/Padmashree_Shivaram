@@ -41,6 +41,33 @@ main, header, footer {
     padding-right: 40px;
 }
 
+/* Styling for the About Me Section Container */
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+}
+
+/* Styling for the text part of About Me */
+.about-me-text {
+    flex: 1; /* Take up all available space */
+    padding-right: 20px; /* Adds space between the text and the image */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Styling for the image part of About Me */
+.about-me-image img {
+    max-width: 250px; /* Reducing image size */
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Experience & Certifications Section - Clean Layout */
 .experience-item,
 .certification-item {
