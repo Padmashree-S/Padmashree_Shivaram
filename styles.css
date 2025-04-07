@@ -41,31 +41,48 @@ main, header, footer {
     padding-right: 40px;
 }
 
-/* Styling for the About Me Section Container */
+/* Default light mode styling for About Me section */
 .about-me-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 40px 0;
-    padding: 40px 20px;  /* Increased padding on the left and right */
-    background-color: #f4f4f9;
+    padding: 40px 20px;  /* Padding on both sides */
+    background-color: #f4f4f9; /* Light background for light mode */
     border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
 }
 
-/* Styling for the text part of About Me */
 .about-me-text {
-    flex: 1; /* Take up all available space */
-    padding-right: 20px; /* Adds space between the text and the image */
+    flex: 1;
+    padding-right: 20px;
     font-size: 1.1em;
     line-height: 1.6;
-    color: #333;
+    color: #333; /* Dark text for light mode */
 }
 
-/* Styling for the image part of About Me */
 .about-me-image img {
-    max-width: 250px; /* Reducing image size */
+    max-width: 250px;
     height: auto;
     border-radius: 8px;
+}
+
+/* Dark mode styling */
+body.dark-mode .about-me-container {
+    background-color: #333;  /* Dark background for dark mode */
+}
+
+body.dark-mode .about-me-text {
+    color: #fff;  /* Light text for dark mode */
+}
+
+/* Optional: Ensure the header and other sections follow the same theme */
+body.dark-mode header {
+    color: #fff;  /* Light text for header in dark mode */
+}
+
+body.dark-mode header h1, body.dark-mode header p {
+    color: #fff;  /* Ensuring header text is visible in dark mode */
 }
 
 /* Experience & Certifications Section - Clean Layout */
