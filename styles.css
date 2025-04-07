@@ -47,7 +47,7 @@ main, header, footer {
     align-items: center;
     justify-content: space-between;
     margin: 40px 0;
-    padding: 40px 20px;  /* Padding on both sides */
+    padding: 40px 40px;  /* Padding on both sides */
     background-color: #f4f4f9; /* Light background for light mode */
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme change */
