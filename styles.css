@@ -55,7 +55,7 @@ main, header, footer {
 .certification-item {
     margin-bottom: 30px;
     padding-bottom: 15px;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: none;
 }
 
 .experience-item h3,
@@ -70,7 +70,7 @@ main, header, footer {
     font-size: 1rem;
     color: var(--text-color);
     line-height: 1.5; /* Added more line spacing to prevent congested points */
-    margin-bottom: 10px; /* Added margin to separate points */
+    margin-bottom: 0; /* Added margin to separate points */
 }
 
 /* Menu Container (Aligned to the Right) */
