@@ -128,7 +128,7 @@ body.dark-theme header h1, body.dark-mode header p {
 /* Menu Container (Aligned to the Right) */
 .menu-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;/* push toggle left, menu right */
     gap: 30px;
     background-color: var(--primary-color);
     padding: 30px 20px;
@@ -137,6 +137,18 @@ body.dark-theme header h1, body.dark-mode header p {
     z-index: 1000;     /* Ensures the menu is always on top of other content */
     width: 100%;       /* Ensure the menu spans the full width of the page */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to make the menu stand out */
+}
+.mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .menu-item {
@@ -248,7 +260,7 @@ body.dark-theme {
     --text-color: #F8F9FA;          /* Light Gray for Readability */
 }
 
-/* Mode Toggle Button */
+/* Mode Toggle Button 
 .mode-toggle {
     position: absolute;
     top: 10px;
@@ -265,7 +277,7 @@ button {
     color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
-}
+}*/
 
 /* Optional: Remove bullet style globally */
 ul {
