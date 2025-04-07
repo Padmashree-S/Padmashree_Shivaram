@@ -69,7 +69,7 @@ main, header, footer {
 
 /* Dark theme styling */
 body.dark-theme .about-me-container {
-    background-color: #333;  /* Dark background for dark mode */
+    background-color: var(--primary-color);  /* Dark background for dark mode */
 }
 
 body.dark-theme .about-me-text {
