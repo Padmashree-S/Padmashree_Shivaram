@@ -204,7 +204,7 @@ section {
 
 .project {
     width: 45%;
-    background-color: var(--background-color);
+    background-color: #f4f4f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -217,12 +217,12 @@ section {
 }
 
 /* Dark theme styling */
-/*body.dark-theme .projects-container {
-    background-color: var(--primary-color);  /* Dark background for dark mode */
-}*/
-body.dark-theme .project{
+body.dark-theme .projects-container {
     background-color: var(--primary-color);  /* Dark background for dark mode */
 }
+/*body.dark-theme .project{
+    background-color: var(--primary-color);  /* Dark background for dark mode */
+}*/
 
 body.dark-theme .project {
     color: #fff;  /* Light text for dark mode */
