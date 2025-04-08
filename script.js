@@ -22,4 +22,20 @@ themeToggleButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
         themeToggleButton.innerHTML = '🌙'; // Switch to dark mode icon
     }
+}
+ document.addEventListener("DOMContentLoaded", () => {
+  const tiles = document.querySelectorAll(".skill-tile");
+
+  tiles.forEach(tile => {
+    tile.addEventListener("click", () => {
+      // Close other tiles
+      tiles.forEach(t => {
+        if (t !== tile) t.classList.remove("active");
+      });
+
+      // Toggle current tile
+      tile.classList.toggle("active");
+    });
+  });
 });
+);
