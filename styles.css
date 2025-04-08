@@ -89,7 +89,7 @@ body.dark-theme header h1, body.dark-mode header p {
 .experience-section {
     margin-bottom: 50px; /* Adds spacing between experience and certifications */
     padding-bottom: 30px;
-    border-bottom: 2px dashed var(--accent-color);
+    border-bottom: none; /*2px dashed var(--accent-color);*/
 }
 
 .experience-item {
@@ -108,7 +108,7 @@ body.dark-theme header h1, body.dark-mode header p {
     font-size: 1.1em;
     color: var(--text-color);
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 0; /*10px;*/
 }
 
 /* Certification Section */
@@ -136,13 +136,13 @@ body.dark-theme header h1, body.dark-mode header p {
 }
 
 
-/* Remove dividing lines between companies */
+/* Remove dividing lines between companies 
 .experience-item {
     border-bottom: none;
 }
 .experience-item p:last-child {
     margin-bottom: 0;
-}
+}*/
 
 /* Remove previous boxy background styles if any */
 .experience-item,
