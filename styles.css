@@ -217,10 +217,10 @@ section {
 }
 
 /* Dark theme styling */
-body.dark-theme .projects-container {
+/*body.dark-theme .projects-container {
     background-color: var(--background-color);  /* Dark background for dark mode */
-}
-*body.dark-theme .project{
+}*/
+body.dark-theme .project{
     background-color: var(--primary-color);  /* Dark background for dark mode */
 }
 
