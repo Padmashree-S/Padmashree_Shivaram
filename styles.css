@@ -222,9 +222,6 @@ section {
 }*/
 body.dark-theme .project{
     background-color: var(--primary-color);  /* Dark background for dark mode */
-}
-
-body.dark-theme .project {
     color: #fff;  /* Light text for dark mode */
 }
 
