@@ -311,20 +311,24 @@ ul {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: normal;
+    color: var(--text-color); /* Always use CSS variable */
     transition: color 0.3s ease;
 }
 
-@media (prefers-color-scheme: light) {
+body.dark-theme .github-link {
+    color: var(--text-color); /* Still uses light text set in dark theme */
+} 
+/*@media (prefers-color-scheme: light) {
     .github-link {
         color: #333; /*  for light mode */
     }
-}
+}*/
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     .github-link {
         color: #fff; /*  for dark backgrounds */
     }
-}
+}*/
 
 
 /* Media Queries */
