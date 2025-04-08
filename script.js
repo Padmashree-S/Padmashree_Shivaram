@@ -24,17 +24,17 @@ themeToggleButton.addEventListener('click', () => {
     }
 }
  document.addEventListener("DOMContentLoaded", () => {
-  const tiles = document.querySelectorAll(".skill-tile");
+  const buttons = document.querySelectorAll(".skill-button");
 
-  tiles.forEach(tile => {
-    tile.addEventListener("click", () => {
-      // Close other tiles
-      tiles.forEach(t => {
-        if (t !== tile) t.classList.remove("active");
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Collapse all others
+      buttons.forEach(btn => {
+        if (btn !== button) btn.classList.remove("active");
       });
 
-      // Toggle current tile
-      tile.classList.toggle("active");
+      // Toggle current one
+      button.classList.toggle("active");
     });
   });
 });
