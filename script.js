@@ -23,18 +23,18 @@ themeToggleButton.addEventListener('click', () => {
         themeToggleButton.innerHTML = '🌙'; // Switch to dark mode icon
     }
 }
- document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".skill-button");
+document.addEventListener("DOMContentLoaded", () => {
+  const tiles = document.querySelectorAll(".skill-tile");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      // Collapse all others
-      buttons.forEach(btn => {
-        if (btn !== button) btn.classList.remove("active");
+  tiles.forEach(tile => {
+    tile.addEventListener("click", () => {
+      // Collapse others
+      tiles.forEach(t => {
+        if (t !== tile) t.classList.remove("active");
       });
 
-      // Toggle current one
-      button.classList.toggle("active");
+      // Toggle current tile
+      tile.classList.toggle("active");
     });
   });
 });
