@@ -216,6 +216,24 @@ section {
     border-radius: 8px;
 }
 
+/* Dark theme styling */
+body.dark-theme .projects-container {
+    background-color: var(--primary-color);  /* Dark background for dark mode */
+}
+
+body.dark-theme .project {
+    color: #fff;  /* Light text for dark mode */
+}
+
+/* Optional: Ensure the header and other sections follow the same theme */
+body.dark-theme header {
+    color: #fff;  /* Light text for header in dark mode */
+}
+
+body.dark-theme header h1, body.dark-mode header p {
+    color: #fff;  /* Ensuring header text is visible in dark mode */
+}
+
 /* Education Section */
 .education-item {
     margin-bottom: 30px;
