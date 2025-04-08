@@ -295,7 +295,7 @@ body.dark-theme header h1, body.dark-mode header p {
 
 /* Dark and Light Theme Variables */
 :root {
-    --primary-color: #264653;       /* Deep Teal */
+    --primary-color: #ffa8B6; /*Pink Sand*/ /*#264653;*/       /* Deep Teal */
     --secondary-color: #E76F51;     /* Warm Coral */
     --accent-color: #2A9D8F;        /* Soft Green */
     --background-color: #F8F9FA;    /* Light Gray */
