@@ -86,59 +86,53 @@ body.dark-theme header h1, body.dark-mode header p {
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  width: 90%;
-  max-width: 1200px;
-  padding: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.skill-tile {
+.skill-button {
   background-color: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  border-radius: 10px;
+  padding: 12px 18px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   cursor: pointer;
   position: relative;
-}
-
-.skill-tile:hover {
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-  transform: translateY(-5px);
-}
-
-.skill-tile i {
-  font-size: 36px;
-  color: #0078d4;
-  margin-bottom: 10px;
-}
-
-.skill-tile h3 {
-  font-size: 18px;
-  margin: 0 0 10px;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: left;
+  font-size: 14px;
   color: #333;
+}
+
+.skill-button i {
+  margin-right: 8px;
+  color: #0078d4;
+}
+
+.skill-button:hover {
+  transform: translateY(-4px);
+  background-color: #e9f3ff;
 }
 
 .skill-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
+  padding: 10px 0 0;
+  margin: 10px 0 0;
+  border-top: 1px solid #ccc;
+  display: none;
 }
 
-.skill-tile.active .skill-list {
-  max-height: 300px; /* enough to show list items */
-  margin-top: 15px;
+.skill-button.active .skill-list {
+  display: block;
 }
 
 .skill-list li {
-  font-size: 14px;
+  font-size: 13px;
+  color: #444;
   padding: 4px 0;
-  color: #555;
   border-bottom: 1px solid #eee;
 }
 /* Experience Section */
