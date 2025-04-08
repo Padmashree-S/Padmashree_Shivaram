@@ -154,7 +154,7 @@ button {
 .menu-items {
     display: flex;
     align-items: center;
-    gap: 15px; /* Control spacing between menu items */
+    gap: 20px; /* Control spacing between menu items */
 }
 
 .menu-item {
@@ -218,11 +218,11 @@ section {
 
 /* Dark theme styling */
 body.dark-theme .projects-container {
+    background-color: var(--background-color);  /* Dark background for dark mode */
+}
+*body.dark-theme .project{
     background-color: var(--primary-color);  /* Dark background for dark mode */
 }
-/*body.dark-theme .project{
-    background-color: var(--primary-color);  /* Dark background for dark mode */
-}*/
 
 body.dark-theme .project {
     color: #fff;  /* Light text for dark mode */
