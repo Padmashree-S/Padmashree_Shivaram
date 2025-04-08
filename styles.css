@@ -85,28 +85,56 @@ body.dark-theme header h1, body.dark-mode header p {
     color: #fff;  /* Ensuring header text is visible in dark mode */
 }
 
-/* Experience & Certifications Section - Clean Layout */
-.experience-item,
+/* Experience Section */
+.experience-section {
+    margin-bottom: 50px; /* Adds spacing between experience and certifications */
+    padding-bottom: 30px;
+    border-bottom: 2px dashed var(--accent-color);
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.experience-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.experience-item p {
+    font-size: 1.1em;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Certification Section */
+.certification-section {
+    margin-top: 30px;
+}
+
 .certification-item {
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid var(--accent-color);
 }
 
-.experience-item h3,
 .certification-item h3 {
     font-size: 1.2rem;
-    margin-bottom: 10px; /* Added margin to give space between title and content */
+    margin-bottom: 10px;
     color: var(--text-color);
 }
 
-.experience-item p,
 .certification-item p {
     font-size: 1.1em;
     color: var(--text-color);
-    line-height: 1.5; /* Added more line spacing to prevent congested points */
-    margin-bottom: 10px; /* Added margin to separate points */
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
+
 
 /* Remove dividing lines between companies */
 .experience-item {
