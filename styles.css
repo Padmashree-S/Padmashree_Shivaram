@@ -146,7 +146,7 @@ body.dark-theme header h1, body.dark-mode header p {
 .experience-item {
     margin-bottom: 30px;
     padding-bottom: 15px;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: none; /*1px solid var(--accent-color);*/
 }
 
 .experience-item h3 {
