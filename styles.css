@@ -309,19 +309,20 @@ ul {
 
 .github-link {
     text-decoration: none;
+    font-size: 1.2rem
     font-weight: normal;
     transition: color 0.3s ease;
 }
 
 @media (prefers-color-scheme: light) {
     .github-link {
-        color: #F8F9FA; /* GitHub blue for light mode */
+        color: #333; /*  for light mode */
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .github-link {
-        color: #fff; /* Lighter blue for dark backgrounds */
+        color: #fff; /*  for dark backgrounds */
     }
 }
 
