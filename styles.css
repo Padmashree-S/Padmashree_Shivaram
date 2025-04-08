@@ -87,10 +87,12 @@ body.dark-theme header h1, body.dark-mode header p {
 
 .skills {
   display: flex;
-  gap: 30px;
+  flex-direction: row; /*horizontal layout*/
+  gap: 20px;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;        /* Prevent wrapping unless you want mobile-friendly */
+  overflow-x: auto;         /* Optional: allow scrolling if tiles overflow screen */
 }
 
 .skill-tile {
@@ -99,6 +101,7 @@ body.dark-theme header h1, body.dark-mode header p {
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   padding: 16px 20px;
   width: 220px;
+  flex-shrink: 0;           /* prevent squishing */
   transition: all 0.3s ease;
   cursor: pointer;
 }
