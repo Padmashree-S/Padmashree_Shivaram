@@ -142,7 +142,7 @@ body.dark-theme header h1, body.dark-mode header p {
 
 body.dark-theme .skill-tile {
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: #fff; /*var(--text-color);*/
 }
 
 body.dark-theme .skill-tile:hover {
