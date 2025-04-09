@@ -145,9 +145,6 @@ body.dark-theme .skill-tile {
   color: #fff; /*var(--text-color);*/
 }
 
-body.dark-theme .tile-header {
-  color: #fff;
-
 body.dark-theme .skill-tile:hover {
   background-color: var(--accent-color);
   color: #fff;
