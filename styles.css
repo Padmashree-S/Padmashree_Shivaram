@@ -87,6 +87,7 @@ body.dark-theme header h1, body.dark-mode header p {
 
 .skills {
   display: flex;
+  flex-direction: row; /*horizontal layout*/
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
@@ -96,7 +97,6 @@ body.dark-theme header h1, body.dark-mode header p {
 
 .skill-tile {
   background-color: #fff;
-  flex-direction: row; /*horizontal layout*/
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   padding: 16px 20px;
