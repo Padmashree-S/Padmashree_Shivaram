@@ -37,8 +37,8 @@ p {
 
 /* Page Side Padding */
 main, header, footer {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 /* Default light mode styling for About Me section */
@@ -91,12 +91,12 @@ body.dark-theme header h1, body.dark-mode header p {
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: nowrap;        /* Prevent wrapping unless you want mobile-friendly */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   overflow-x: auto;         /* Optional: allow scrolling if tiles overflow screen */
 }
 
 .skill-tile {
-  background-color: #f4f4f9;;
+  background-color: #f4f4f9;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   padding: 16px 20px;
@@ -109,7 +109,7 @@ body.dark-theme header h1, body.dark-mode header p {
 .tile-header {
   font-weight: bold;
   font-size: 16px;
-  color: #333;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -150,6 +150,10 @@ body.dark-theme .skill-tile:hover {
   color: #fff;
 }
 
+body.dark-theme {
+    --text-color: #fff;
+}
+
 /* Experience Section */
 .experience-section {
     margin-bottom: 50px; /* Adds spacing between experience and certifications */
@@ -172,8 +176,13 @@ body.dark-theme .skill-tile:hover {
 .experience-item p {
     font-size: 1.1em;
     color: var(--text-color);
-    line-height: 1.5;
+    line-height: 2.0;
     margin-bottom: 0; /*10px;*/
+}
+
+.experience-item ul li {
+    padding: 3px;
+    margin-bottom: 10px;
 }
 
 /* Certification Section */
@@ -200,14 +209,13 @@ body.dark-theme .skill-tile:hover {
     margin-bottom: 0; /*10px;*/
 }
 
-
-/* Remove dividing lines between companies 
+/* Remove dividing lines between companies */
 .experience-item {
     border-bottom: none;
 }
 .experience-item p:last-child {
     margin-bottom: 0;
-}*/
+}
 
 /* Remove previous boxy background styles if any */
 .experience-item,
@@ -216,7 +224,6 @@ body.dark-theme .skill-tile:hover {
     border-radius: 0;
     padding: 0;
 }
-
 
 /* Menu Container (Aligned to the Right) */
 .menu-container {
@@ -231,6 +238,7 @@ body.dark-theme .skill-tile:hover {
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .mode-toggle {
     display: flex;
     align-items: center;
@@ -310,8 +318,7 @@ section {
 }
 
 /* Dark theme styling */
-
-body.dark-theme .project{
+body.dark-theme .project {
     background-color: var(--primary-color);  /* Dark background for dark mode */
     color: #fff;  /* Light text for dark mode */
 }
@@ -397,7 +404,7 @@ button {
 /* Optional: Remove bullet style globally */
 ul {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 10px;
 }
 
 .github-link {
@@ -426,6 +433,18 @@ body.dark-theme .github-link {
 
 /* Media Queries */
 @media (max-width: 768px) {
+
+    .skills {
+        flex-direction: column; /* Stack skill tiles vertically on smaller screens */
+        align-items: center; /* Center align the items */
+      }
+    
+      .skill-tile {
+        width: 100%; /* Make skill tiles take full width on smaller screens */
+        max-width: 320px; /* Optional: cap the width to avoid stretching */
+        margin-bottom: 20px; /* Ensure there's space between tiles */
+      }
+      
     .projects-container {
         flex-direction: column;
         align-items: center;
@@ -444,5 +463,21 @@ body.dark-theme .github-link {
         font-size: 1rem;
         margin-bottom: 10px;
     }
-}
 
+    /* Experience Section */
+    .experience-section {
+        margin-bottom: 20px;
+    }
+
+    .experience-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-item p {
+        font-size: 1rem;
+    }
+
+    .experience-item ul li {
+        font-size: 12px;
+    }
+}
