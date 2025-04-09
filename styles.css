@@ -139,6 +139,17 @@ body.dark-theme header h1, body.dark-mode header p {
   padding: 5px 0;
   border-bottom: 1px solid #eee;
 }
+
+body.dark-theme .skill-tile {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+body.dark-theme .skill-tile:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
 /* Experience Section */
 .experience-section {
     margin-bottom: 50px; /* Adds spacing between experience and certifications */
