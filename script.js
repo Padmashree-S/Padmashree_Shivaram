@@ -22,7 +22,7 @@ themeToggleButton.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
         themeToggleButton.innerHTML = '🌙'; // Switch to dark mode icon
     }
-}
+});
 document.addEventListener("DOMContentLoaded", () => {
   const tiles = document.querySelectorAll(".skill-tile");
 
@@ -38,4 +38,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-);
+
